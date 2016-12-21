@@ -1,0 +1,10 @@
+<p>please enter a url to shorten</p>
+<%= form_for @url, url:{action:"create"} do |f| %>
+<div class="field">
+ <%= f.label :address %>
+ <%= f.text_field :address %>
+</div>
+<div class="actions">
+ <%= f.submit "create"%>
+</div>
+<%end%>

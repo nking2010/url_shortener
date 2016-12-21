@@ -1,0 +1,14 @@
+<%= render "form" %>
+
+<table>
+ <tr>
+   <th>Address</th>
+   <th>Shortened</th>
+ </tr>
+ <% @urls.each do |url|%>
+   <tr>
+     <td><%=link_to url.address%></td>
+     <td><%= link_to  "localhost:3000/#{url.id}",url.address%></td>
+   </tr>
+   <%end%>
+</table>
